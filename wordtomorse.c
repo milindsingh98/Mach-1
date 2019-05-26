@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<conio.h>
 #include<string.h>
-void main()
+int main()
 {
   int len,i;
   char sen[100];
@@ -9,145 +9,149 @@ void main()
   scanf("%s",sen);
   len = strlen(sen);
   printf("%d\n",len);
-  for(i=0;i<=len;i++)
+  for(i=0;i<len;i++)
   {
-          switch(i)
+      while(sen[i]!='\0')
+      {
+          switch(sen[i])
           {
-        case a:
+        case 'a':
             {
                 printf(".-\t");
                 break;
             }
-        case b:
+        case 'b':
             {
                 printf("-...\t");
                 break;
             }
-        case c:
+        case 'c':
             {
                 printf("-.-.\t");
                 break;
             }
-        case d:
+        case 'd':
             {
                 printf("-..\t");
                 break;
             }
-        case e:
+        case 'e':
             {
                 printf(".\t");
                 break;
             }
-        case f:
+        case 'f':
             {
                 printf("..-.\t");
                 break;
             }
-        case g:
+        case 'g':
             {
-                printf(--."\t");
+                printf("--.\t");
                 break;
             }
-        case h:
+        case 'h':
             {
                 printf("....\t");
                 break;
             }
-        case i:
+        case 'i':
             {
                 printf("..\t");
                 break;
             }
-        case j:
+        case 'j':
             {
                 printf(".---\t");
                 break;
             }
-        case k:
+        case 'k':
             {
                 printf("-.-\t");
                 break;
             }
-        case l:
+        case 'l':
             {
                 printf(".-..\t");
                 break;
             }
-        case m:
+        case 'm':
             {
                 printf("--\t");
                 break;
             }
-        case n:
+        case 'n':
             {
                 printf("-.\t");
                 break;
             }
-        case o:
+        case 'o':
             {
                 printf("---\t");
                 break;
             }
-        case p:
+        case 'p':
             {
                 printf(".--.\t");
                 break;
             }
-        case q:
+        case 'q':
             {
                 printf("--.-\t");
                 break;
             }
-        case r:
+        case 'r':
             {
                 printf(".-.\t");
                 break;
             }
-        case s:
+        case 's':
             {
                 printf("...\t");
                 break;
             }
-        case t:
+        case 't':
             {
                 printf("-\t");
                 break;
             }
-        case u:
+        case 'u':
             {
                 printf("..-\t");
                 break;
             }
-        case v:
+        case 'v':
             {
                 printf("...-\t");
                 break;
             }
-        case w:
+        case 'w':
             {
                 printf(".--\t");
                 break;
             }
-        case x:
+        case 'x':
             {
                 printf("-..-\t");
                 break;
             }
-        case y:
+        case 'y':
             {
                 printf("-.--\t");
                 break;
             }
-        case z:
+        case 'z':
             {
                 printf("--..\t");
                 break;
             }
-        case default:
+        default:
             {
                 printf("Enter only letters");
+                break;
             }
-
           }
+      }
   }
+  return 0;
 }
