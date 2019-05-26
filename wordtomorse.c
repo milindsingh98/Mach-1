@@ -8,4 +8,5 @@ void main()
   printf("Enter a sentence\n");
   scanf("%s",sen);
   len = stelen(sen);
-  
+  printf("%d\n",len);
+}
