@@ -11,7 +11,7 @@ int main()
   printf("%d\n",len);
   for(i=0;i<len;i++)
   {
-      while(sen[i]!='\0')
+      while(sen!='\0')
       {
           switch(sen[i])
           {
@@ -151,6 +151,7 @@ int main()
                 break;
             }
           }
+        break;
       }
   }
   return 0;
